@@ -1,15 +1,35 @@
-<!DOCTYPE html>
 <html>
+<head>
+<script>
+function myFunction(){
+  
+ var Denary=document.getElementById("Dn").value;
+ var Denaryint= parseInt(Denary)
+
+ document.getElementById("Bn").innerHTML= Denaryint.toString(2)
+ }
+ 
+</script>
+</head>
 <body>
+<p id="demo"></p>
 
-<h1>Binary to Denary Converter!</h1>
+<h1>Denary to Binary Converter!</h1>
 
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
+  <label for="Dn">Denary Number :</label>
+  <input type="text" id="Dn" name="fname"><br><br>
+
+  <p  id="Bn" > Binary Number:</p><br><br>
+
+
+
+
+  <label for="submit"> Solve! :</label>
+  <input type="button" id="submit" onclick="myFunction(4, 3)">
+
+
 
 
 </body>
 </html>
+
