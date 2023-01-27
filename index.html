@@ -1,14 +1,29 @@
+<!DOCTYPE html>
 <html>
 <head>
+<style>
+.button {
+  background-color: #FFA3B2;
+  border: none;
+  color: white;
+  padding: 5px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
 <script>
 function myFunction(){
   
  var Denary=document.getElementById("Dn").value;
  var Denaryint= parseInt(Denary)
-
- document.getElementById("Bn").innerHTML= Denaryint.toString(2)
- }
  
+ document.getElementById("Bn").innerHTML= "Binary Number: "+Denaryint.toString(2)
+ }
+
 </script>
 </head>
 <body>
@@ -24,9 +39,9 @@ function myFunction(){
 
 
 
-  <label for="submit"> Solve! :</label>
-  <input type="button" id="submit" onclick="myFunction(4, 3)">
-
+  
+  <input type="button" value= "Calculate!" class= "button" id="submit" onclick="myFunction()"> 
+  
 
 
 
